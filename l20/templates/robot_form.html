@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<form method="post" action="/robot/robot_form/">
+<form method="post" action="/robots/">
     {% csrf_token %}
-    {{ form }}
+    {{ form.as_p }}
     <button type="submit">create</button>
 </form>
 
